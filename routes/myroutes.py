@@ -1,11 +1,9 @@
-import random 
-from config import app 
+from config import app
 
-@app.get('/message')
+@app.get('/home')
 def greetnow():
-    return " This is my task"
+    return "This is home page...Hi How arey you?"
 
-@app.get('/number')
+@app.get('/sample')
 def fun():
-    num = random.randint(0,100)
-    return f"{num} is returned"
+    return " This is a sample page"
